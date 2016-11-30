@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".PictureActivity"
+    android:background="@android:color/black" >
+
+    <LinearLayout
+        android:id="@+id/pannel_top"
+        style="@style/VerticalPannel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+        
+        <ImageButton
+            android:id="@+id/find_more_stickers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"
+            style="@style/ImageButtonTransparent"
+            android:layout_marginTop="10dp" />
+
+        <ScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/main_sticker_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+        
+    </LinearLayout>
+    
+    <FrameLayout
+        android:id="@+id/image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/pannel_bottom"
+        android:layout_toRightOf="@+id/pannel_top" >
+        
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/pannel_bottom"
+        style="@style/VerticalPannel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/share_mail"
+            style="@style/ImageButtonTransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/share_mail" />
+
+        <ImageButton
+            android:id="@+id/share_twitter"
+            style="@style/ImageButtonTransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/share_twitter" />
+
+        <ImageButton
+            android:id="@+id/share_facebook"
+            style="@style/ImageButtonTransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="180dp"
+            android:src="@drawable/share_facebook" />
+
+        <ImageButton
+            android:id="@+id/back_to_camera"
+            style="@style/ImageButtonTransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_to_camera" />
+
+    </LinearLayout>
+
+</RelativeLayout>

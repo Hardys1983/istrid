@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/toggle_camera_background" android:drawable="@android:color/transparent"></item>
+    <item android:id="@+id/toggle_camera" android:drawable="@drawable/toggle_camera_selector"></item>
+</layer-list>

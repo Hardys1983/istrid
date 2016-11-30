@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateStickersActivity" 
+    android:background="@android:color/black">
+    
+    <LinearLayout
+        android:id="@+id/pannel_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        style="@style/HorizontalPannel" >
+
+        <ImageButton
+            android:id="@+id/cancel_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="20dp" />
+        
+        <ImageView
+            android:id="@+id/logotype_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/logotype" />
+
+        <ImageButton
+            android:id="@+id/update_stickers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reload"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="20dp" />
+    
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/sticker_update_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pannel_top" >
+    </ListView>
+
+</RelativeLayout>

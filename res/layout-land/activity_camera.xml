@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".CameraActivity"
+    android:background="@android:color/black" >
+
+    <LinearLayout
+        android:id="@+id/pannel_top"
+        style="@style/VerticalPannel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/toggle_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/flash_on"
+            android:layout_marginTop="20dp" />
+        
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.83"
+            android:src="@drawable/logotype_land" />
+
+       <ImageButton
+            android:id="@+id/toggle_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/camera_front"
+            android:layout_marginBottom="20dp" />
+    
+    </LinearLayout>
+    
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/pannel_bottom"
+        android:layout_toRightOf="@+id/pannel_top" >
+        
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/pannel_bottom"
+        style="@style/VerticalPannel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/information"
+            style="@style/ImageButtonTransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/information"
+            android:layout_marginTop="20dp" />
+
+        <ImageButton
+            android:id="@+id/camera_shutter"
+            style="@style/ImageButtonTransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/camera_shutter" />
+
+        <ImageButton
+            android:id="@+id/desconocido"
+            style="@style/ImageButtonTransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/unknow"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+
+</RelativeLayout>

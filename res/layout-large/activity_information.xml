@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Pannel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".InformationActivity" >
+
+    <ImageButton
+        android:id="@+id/cancel"
+        style="@style/ImageButtonTransparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/cancel" />
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/VersionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cancel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:text="1.8.3" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/information_logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="ISTRID PROPS IS EASY TO USE"
+        android:textColor="#FFFFFF"
+        android:textSize="18dip" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="1- First Take a picture"
+        android:textColor="#FFFFFF"
+        android:textSize="14dip" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:text="2- Edit your picture with amaizing stickers."
+        android:textColor="#FFFFFF"
+        android:textSize="14dip" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="10dp"
+        android:text="3- Share your final picture with your friends"
+        android:textColor="#FFFFFF"
+        android:textSize="14dip" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="10dp"
+        android:text="Please Contact Us for mores information"
+        android:textColor="#FFFFFF"
+        android:textSize="14dip" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:text="E-Mail: "
+        android:textColor="#FFFFFF"
+        android:textSize="14dip" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
+        android:text="clientes@istrid.com"        
+        android:textColor="#D5F407"
+        android:textSize="14dip" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:text="Phone: "
+        android:textColor="#FFFFFF"
+        android:textSize="14dip" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:text="+52 (998) 8840268"        
+        android:textColor="#D5F407"
+        android:textSize="14dip" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Mc Bravos - iStrid"
+        android:textColor="#FFFFFF"
+        android:textSize="14dip" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Development: César Trujillo Cetina"
+        android:textColor="#FFFFFF"
+        android:textSize="14dip" />
+
+</RelativeLayout>

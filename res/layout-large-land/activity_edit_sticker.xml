@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditStickerActivity"
+    android:background="@android:color/black" >
+
+    <FrameLayout
+        android:id="@+id/edit_picture"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/pannel_bottom" >
+    </FrameLayout>
+
+<LinearLayout
+    android:id="@+id/pannel_bottom"
+    style="@style/VerticalPannel"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/edit_sticker_cancel"
+        style="@style/ImageButtonTransparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cancel_72" />
+
+    <ImageButton
+        android:id="@+id/edit_sticker_accept"
+        style="@style/ImageButtonTransparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/accept_72" />
+</LinearLayout>
+    
+</RelativeLayout>

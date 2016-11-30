@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".CameraActivity"
+    android:background="@android:color/black" >
+
+    <LinearLayout
+        android:id="@+id/pannel_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        style="@style/HorizontalPannel" >
+
+        <ImageButton
+            android:id="@+id/toggle_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/flash_on"
+            android:layout_marginLeft="40dp" />
+        
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logotype"
+            android:layout_weight="1" />
+
+       <ImageButton
+            android:id="@+id/toggle_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/camera_front"
+            android:layout_marginRight="40dp" />
+    
+    </LinearLayout>
+    
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/pannel_bottom"
+        android:layout_below="@+id/pannel_top" >
+        
+    </FrameLayout>
+    
+    <LinearLayout
+        android:id="@+id/pannel_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+		style="@style/HorizontalPannel" >
+
+        <ImageButton
+            android:id="@+id/information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/information"
+            style="@style/ImageButtonTransparent"
+            android:layout_marginLeft="40dp" />
+
+        <ImageButton
+            android:id="@+id/camera_shutter"
+            style="@style/ImageButtonTransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/camera_shutter" />
+
+        <ImageButton
+            android:id="@+id/desconocido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/unknow"
+            style="@style/ImageButtonTransparent"
+            android:layout_marginRight="40dp" />
+    
+    </LinearLayout>
+
+</RelativeLayout>

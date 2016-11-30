@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.istrid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
+    <compatible-screens >
+        <screen android:screenSize="small"/>
+        <screen android:screenSize="normal"/>
+        <screen android:screenSize="large"/>
+        <screen android:screenSize="xlarge"/>
+    </compatible-screens>
+    
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-configuration  android:reqTouchScreen="finger"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="true" />
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="true" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.istrid.CameraActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.istrid.InformationActivity"
+            android:label="@string/title_activity_information" >
+            <intent-filter>
+                <action android:name="com.istrid.INFORMATIONACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.istrid.PictureActivity"
+            android:label="@string/title_activity_picture"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.istrid.PICTUREACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.istrid.StickerActivity"
+            android:label="@string/title_activity_sticker" >
+            <intent-filter>
+                <action android:name="com.istrid.STICKERACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.istrid.EditStickerActivity"
+            android:label="@string/title_activity_edit_sticker"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.istrid.EDITSTICKERACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.istrid.UpdateStickersActivity"
+            android:label="@string/title_activity_update_stickers" >
+            <intent-filter>
+                <action android:name="com.istrid.UPDATESTICKERACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
